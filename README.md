@@ -17,9 +17,19 @@ As a prospective buyer of a property in Ames, I would like to find out how much 
 
 ## 3. Executive Summary
 
-A 
+Using the dataset till date, i have established a Linear Regression model with Ridge correction, that brought me to within a root mean squared error of 26,210. It is therefore possible to predict the true market value price of a property with certain accuracy. I used the following steps:
 
+A. Data Cleaning: Removal of anomalies found in both the test and train dataset, filling in null values with appropriate column statistics.
 
+B. Feature Engineering: 
+
+-Employing a mix of converting "quality" based features into numerical proxies, and dummy variables for categorical features.
+
+- Normalizing the dependent variable (Sale Price) to account for its skeweness and peakdness.
+
+C. Feature Selection: Choosing of top highly correlated features with Sale Price variable.
+
+D. Modelling: Fitting, modelling, and comparing the models using Linear Regression, RidgeCV and LassoCV.
 
 -----------------------------------------------------------------------
 
