@@ -23,7 +23,7 @@ A. Data Cleaning: Removal of anomalies found in both the test and train dataset,
 
 B. Feature Engineering: 
 
--Employing a mix of converting "quality" based features into numerical proxies, and dummy variables for categorical features.
+- Employing a mix of converting "quality" based features into numerical proxies, and dummy variables for categorical features.
 
 - Normalizing the dependent variable (Sale Price) to account for its skeweness and peakdness.
 
