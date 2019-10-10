@@ -11,11 +11,17 @@ purchase and students should find most variables straightforward and understanda
 
 Further details on the dataset is appended in the Annex.
 
-## 2. Executive Summary
+## 2. Objectives
+
+As a prospective buyer of a property in Ames, I would like to find out how much should i expect to pay for a property, given its house characteristics (i.e. quality), features (i.e. facilities), and embellishments. 
+
+## 3. Executive Summary
+
+A 
 
 
 
-
+-----------------------------------------------------------------------
 
 ## Annex
 
