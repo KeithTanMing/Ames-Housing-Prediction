@@ -17,7 +17,7 @@ As a prospective buyer of a property in Ames, I would like to find out how much 
 
 ## 3. Executive Summary
 
-Using the dataset till date, i have established a Linear Regression model with Ridge correction, that brought me to within a root mean squared error of 26,210. It is therefore possible to predict the true market value price of a property with certain accuracy. I used the following steps:
+Using the dataset till date, i have established a Linear Regression model with Ridge correction, that brought me to within a root mean squared error of 26,210 (on Kaggle). It suggests that selected features contained within the dataset are good indicators of the true market value price of a property, with certain accuracy. For the disection of the data, I used the following steps:
 
 A. Data Cleaning: Removal of anomalies found in both the test and train dataset, filling in null values with appropriate column statistics.
 
