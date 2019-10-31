@@ -1,35 +1,17 @@
 # Ames-Housing-Prediction
 
 ## 1. Introduction
+The Ames Housing dataset contains information from the Ames Assessor’s Office used in computing assessed values for individual residential properties sold in Ames, IA, USA from 2006 to 2010. This data set was constructed for the purpose of an end of semester project for an undergraduate regression course. The original data (obtained directly from the Ames Assessor’s Office) is used for tax assessment purposes but lends itself directly to the prediction of home selling prices.
 
-The Ames Housing dataset contains information from the Ames Assessor’s Office used in computing assessed values for individual 
-residential properties sold in Ames, IA, USA from 2006 to 2010. This data set was constructed for the purpose of an end of 
-semester project for an undergraduate regression course. The original data (obtained directly from the Ames Assessor’s Office)
-is used for tax assessment purposes but lends itself directly to the prediction of home selling prices. 
-The type of information contained in the data is similar to what a typical home buyer would want to know before making a 
-purchase and students should find most variables straightforward and understandable.
+### Problem Statement:
+What features of a house (e.g. quality of bedroom, presence of pool) has the most significant statistical impact on the price of a house in Ames, Iowa?
 
-Further details on the dataset is appended in the Annex.
+## 2. Executive Summary
+A series of data cleaning, exploratory data analysis, feature engineering and modelling were carried out on the dataset. As the predictor is a continus variable (sale price), the dataset was modelled against a Linear Regression, with Lasso and Ridge corrections.
 
-## 2. Objectives
+From the results, a Linear Regression model with Ridge correction was evaluated to be the best predictor model, and brought me to within a Root-Mean-Squared error of 26,210 (on Kaggle), with a R-Squared score of 0.89.
 
-As a prospective buyer of a property in Ames, I would like to find out how much should i expect to pay for a property, given its house characteristics (i.e. quality), features (i.e. facilities), and embellishments. 
-
-## 3. Executive Summary
-
-Using the dataset till date, i have established a Linear Regression model with Ridge correction, that brought me to within a root mean squared error of 26,210 (on Kaggle), with an R-Squared score of 0.89. It suggests that selected features contained within the dataset are good indicators (but not exhaustive) of the true market value price of a property, with certain accuracy. For the disection of the data, I used the following steps:
-
-A. Data Cleaning: Removal of anomalies found in both the test and train dataset, filling in null values with appropriate column statistics.
-
-B. Feature Engineering: 
-
-- Employing a mix of converting "quality" based features into numerical proxies, and dummy variables for categorical features.
-
-- Normalizing the dependent variable (Sale Price) to account for its skeweness and peakdness.
-
-C. Feature Selection: Choosing of top highly correlated features with Sale Price variable.
-
-D. Modelling: Fitting, modelling, and comparing the models using Linear Regression, RidgeCV and LassoCV.
+Features that were determined to have significant statistical impact on the price of the house include the 'Overall Quality', and a combination of selected features with its quality (e.g. 'Gross Living Area' and 'Quality of House Heating, 'Fireplace' and 'Quality of Fireplace').
 
 -----------------------------------------------------------------------
 
